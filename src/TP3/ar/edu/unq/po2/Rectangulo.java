@@ -7,8 +7,8 @@ public class Rectangulo {
     //Builder
     public Rectangulo(Point start,int heigth,int length) {
         this.setStartPoint(start);
-        this.setHeigth(length);
-        this.setLength(heigth);
+        this.setHeigth(heigth);
+        this.setLength(length);
     }
     //Gets/Sets
     protected void setStartPoint(Point s) {
