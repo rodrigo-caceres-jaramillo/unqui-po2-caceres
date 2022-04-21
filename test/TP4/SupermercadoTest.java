@@ -21,17 +21,17 @@ public class SupermercadoTest {
 	
 	@Test
 	public void testCantidadDeProductos() {
-		assertEquals(0, supermercado.getCantidadDeProductos());
-		supermercado.agregarProducto(arroz);
-		supermercado.agregarProducto(detergente);
-		assertEquals(2, supermercado.getCantidadDeProductos());
+		assertEquals(0, supermercado.getProductsSize());
+		supermercado.addProduct(arroz);
+		supermercado.addProduct(detergente);
+		assertEquals(2, supermercado.getProductsSize());
 	}
 	
 	@Test
 	public void testPrecioTotal() {
-		assertEquals(new Double(0), supermercado.getPrecioTotal());
-		supermercado.agregarProducto(arroz);
-		supermercado.agregarProducto(detergente);
-		assertEquals(new Double(93.9), supermercado.getPrecioTotal());
+		assertEquals(new Double(0), supermercado.getTotalPrice());
+		supermercado.addProduct(arroz);
+		supermercado.addProduct(detergente);
+		assertEquals(new Double(93.9), supermercado.getTotalPrice());
 	}
 }

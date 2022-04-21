@@ -2,7 +2,7 @@ package TP4;
 
 public class Producto {
 	private String name;
-	private double price;
+	public double price;
 	private boolean specialPrice;
 	//Builder
 	public Producto(String name, double price) {
